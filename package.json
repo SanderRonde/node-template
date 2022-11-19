@@ -9,7 +9,7 @@
     "watch": "tsc --watch",
     "lint": "eslint src --ext ts --cache",
     "format": "prettier --write src/",
-    "check-prettier": "yarn prettier --check src/ js/",
+    "check-prettier": "yarn prettier --check src/",
     "build": "esbuild --bundle --minify --outfile=dist/index.js src/index.ts",
     "build:debug": "esbuild --bundle --outfile=dist/index.js src/index.ts"
   },
