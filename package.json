@@ -10,8 +10,8 @@
     "lint": "eslint src --ext ts --cache",
     "format": "prettier --write src/",
     "check-prettier": "yarn prettier --check src/",
-    "build": "esbuild --bundle --minify --outfile=dist/index.js src/index.ts",
-    "build:debug": "esbuild --bundle --outfile=dist/index.js src/index.ts"
+    "build": "esbuild --bundle --platform=node --minify --outfile=dist/index.js src/index.ts",
+    "build:debug": "esbuild --bundle --platform=node --outfile=dist/index.js src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
